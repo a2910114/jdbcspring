@@ -35,17 +35,17 @@ public class ListTest {
         } catch (NullPointerException e) {
             System.out.println("catch");
         } finally {
-            finnally1("finnally1");
-            finnally1("finnally2");
+            finally1("finally1");
+            finally1("finally2");
         }
     }
 
-    private void finnally1(String finnally1) {
+    private void finally1(String finnally1) {
         try {
             System.out.println(finnally1);
             throw new NullPointerException();
         } catch (NullPointerException e) {
-            System.out.println("finnally catch");
+            System.out.println("finally catch");
         }
     }
 }
